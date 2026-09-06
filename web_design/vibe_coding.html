@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Development Approaches: Vibe vs. AI-Assisted vs. Traditional</title>
+    <title>Vibe Coding vs. AI-Enabled Coding vs. Traditional Brain Coding</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -48,7 +48,7 @@
             font-size: 1.1rem;
         }
 
-        /* Continuum Visualization */
+        /* Continuum Card */
         .continuum-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -63,13 +63,13 @@
             font-size: 1.25rem;
             margin-bottom: 1.5rem;
             color: var(--text-primary);
+            font-weight: 600;
         }
 
         .continuum-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
-            position: relative;
         }
 
         .continuum-step {
@@ -84,7 +84,6 @@
         .step-trad { border-color: var(--accent-trad); }
 
         .step-header {
-            font-weight: bold;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
             display: flex;
@@ -101,7 +100,7 @@
             color: var(--text-secondary);
         }
 
-        /* Detailed Cards */
+        /* Detailed Breakdown Cards */
         .details-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -127,6 +126,12 @@
         .detail-card.ai h3 { color: var(--accent-ai); }
         .detail-card.trad h3 { color: var(--accent-trad); }
 
+        .detail-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
         .detail-card ul {
             padding-left: 1.2rem;
             margin: 0;
@@ -135,6 +140,7 @@
         .detail-card li {
             margin-bottom: 0.5rem;
             color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
         .detail-card li strong {
@@ -200,33 +206,33 @@
 
 <div class="container">
     <header>
-        <h1>Modern Software Engineering Paradigms</h1>
-        <p class="subtitle">Comparing Delegation, Control, and Execution Across the Development Spectrum</p>
+        <h1>Software Engineering Spectrum</h1>
+        <p class="subtitle">Vibe Coding vs. AI-Enabled Coding vs. Traditional Brain Coding</p>
     </header>
 
     <div class="continuum-card">
-        <div class="continuum-title">Architectural Continuum & Delegation Levels</div>
+        <div class="continuum-title">Architectural Distinctions & Delegation Levels</div>
         <div class="continuum-grid">
             <div class="continuum-step step-vibe">
                 <div class="step-header">
                     Vibe Coding
-                    <span class="badge badge-vibe">High AI</span>
+                    <span class="badge badge-vibe">Autonomous</span>
                 </div>
-                <div class="step-desc">Pure prompting & autonomous execution. Focus on macro outcome rather than syntax.</div>
+                <div class="step-desc">Pure prompting with autonomous agents. End-to-end delegation evaluating surface behavior over implementation.</div>
             </div>
             <div class="continuum-step step-ai">
                 <div class="step-header">
-                    AI-Assisted
-                    <span class="badge badge-ai">Balanced</span>
+                    AI-Enabled
+                    <span class="badge badge-ai">Augmented</span>
                 </div>
-                <div class="step-desc">Human-in-the-loop pairing. Strategic AI execution with strict developer oversight.</div>
+                <div class="step-desc">Systematic AI integration. Human-led architecture, schema enforcement, code reviews, and automated CI/CD.</div>
             </div>
             <div class="continuum-step step-trad">
                 <div class="step-header">
-                    Traditional
-                    <span class="badge badge-trad">Zero AI</span>
+                    Traditional Brain
+                    <span class="badge badge-trad">Manual</span>
                 </div>
-                <div class="step-desc">100% handcrafted logic. Complete human ownership of every line and abstraction.</div>
+                <div class="step-desc">100% handcrafted logic. Full human ownership of syntax, algorithms, memory, and architectural design.</div>
             </div>
         </div>
     </div>
@@ -234,29 +240,29 @@
     <div class="details-grid">
         <div class="detail-card vibe">
             <h3>Vibe Coding</h3>
+            <p>Interactions take place primarily through natural-language prompting with autonomous AI agents.</p>
             <ul>
-                <li><strong>Execution:</strong> Natural language prompting to autonomous AI agents.</li>
-                <li><strong>Mindset:</strong> Outcome-oriented; code implementation details are secondary.</li>
-                <li><strong>Review Level:</strong> Low to non-existent; evaluated via functional trial-and-error.</li>
-                <li><strong>Ideal Scenario:</strong> Rapid throwaway prototypes, hackathons, and small side projects.</li>
+                <li><strong>Mindset:</strong> Outcome-driven; success judged by functional behavior rather than syntax.</li>
+                <li><strong>Oversight:</strong> Macro level; low-to-no manual auditing of underlying diffs.</li>
+                <li><strong>Optimal Case:</strong> Rapid MVPs, exploratory scripts, weekend hacks, quick prototypes.</li>
             </ul>
         </div>
         <div class="detail-card ai">
-            <h3>AI-Assisted Coding</h3>
+            <h3>AI-Enabled Coding</h3>
+            <p>AI models systematically accelerate design, drafting, test generation, and refactoring within standard engineering workflows.</p>
             <ul>
-                <li><strong>Execution:</strong> Interactive pair-programming with LLMs, inline autocomplete, and targeted generation.</li>
-                <li><strong>Mindset:</strong> Architecture-oriented; human guides system design, security, and quality.</li>
-                <li><strong>Review Level:</strong> High; every generated diff is audited, tested, and refactored.</li>
-                <li><strong>Ideal Scenario:</strong> Production applications, enterprise codebases, and scalable backends.</li>
+                <li><strong>Mindset:</strong> Systems-driven; human guides architectural patterns, security, and schema safety.</li>
+                <li><strong>Oversight:</strong> Dual level; generation verified against strict unit tests and specification checks.</li>
+                <li><strong>Optimal Case:</strong> Enterprise applications, production backends, core APIs, microservices.</li>
             </ul>
         </div>
         <div class="detail-card trad">
             <h3>Traditional "Brain" Coding</h3>
+            <p>Direct line-by-line code creation inside IDEs or text editors without delegating execution to models.</p>
             <ul>
-                <li><strong>Execution:</strong> Manual syntax creation directly in text editors or IDEs.</li>
-                <li><strong>Mindset:</strong> Implementation-oriented; step-by-step logic and memory control.</li>
-                <li><strong>Review Level:</strong> Total; code is completely authored and understood by human intelligence.</li>
-                <li><strong>Ideal Scenario:</strong> High-performance kernels, safety-critical systems, and fundamental computer science education.</li>
+                <li><strong>Mindset:</strong> Implementation-driven; deliberate mental models of memory, syntax, and logic.</li>
+                <li><strong>Oversight:</strong> Micro level; complete personal ownership and auditability of every line.</li>
+                <li><strong>Optimal Case:</strong> High-performance kernels, low-level system software, safety-critical algorithms.</li>
             </ul>
         </div>
     </div>
@@ -267,40 +273,46 @@
                 <tr>
                     <th>Attribute</th>
                     <th>Vibe Coding</th>
-                    <th>AI-Assisted Coding</th>
+                    <th>AI-Enabled Coding</th>
                     <th>Traditional "Brain" Coding</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Primary Interaction</td>
-                    <td>High-level prompts & agent execution</td>
-                    <td>Direct editing + AI completions/chat</td>
-                    <td>Direct keyboard input & manual code authoring</td>
+                    <td>Primary Workflow</td>
+                    <td>High-level prompts & autonomous agents</td>
+                    <td>Prompt-driven drafting + manual review & testing</td>
+                    <td>Direct keyboard authoring & manual syntax construction</td>
                 </tr>
                 <tr>
-                    <td>Code Understanding</td>
-                    <td>Macro (application behavior focus)</td>
-                    <td>Micro & Macro (deep logic comprehension)</td>
-                    <td>Total (complete ownership of abstractions)</td>
+                    <td>Code Oversight</td>
+                    <td>Macro (evaluated via application output)</td>
+                    <td>Dual (AI generation verified against unit tests & specs)</td>
+                    <td>Micro (complete line-by-line mental model)</td>
                 </tr>
                 <tr>
-                    <td>Velocity (0 to 1)</td>
-                    <td>Extremely high initial speed</td>
-                    <td>High and steady lifecycle speed</td>
-                    <td>Moderate; bound by manual syntax creation</td>
+                    <td>Development Velocity</td>
+                    <td>Instant 0-to-1 prototyping</td>
+                    <td>High, sustained velocity across the entire lifecycle</td>
+                    <td>Bound by typing speed and manual logic tracing</td>
                 </tr>
                 <tr>
-                    <td>System Reliability</td>
-                    <td>Variable; prone to technical debt</td>
-                    <td>High; protected by human review & tests</td>
-                    <td>High; predictable & deliberately architected</td>
+                    <td>Architectural Control</td>
+                    <td>Low; reliant on model defaults</td>
+                    <td>High; enforced via design patterns & schemas</td>
+                    <td>Total; full control over every abstraction layer</td>
                 </tr>
                 <tr>
-                    <td>Best Used For</td>
-                    <td>Rapid prototyping, MVPs, scripts</td>
-                    <td>Production systems, enterprise apps</td>
-                    <td>Kernels, embedded systems, core algorithms</td>
+                    <td>Primary Risk</td>
+                    <td>Hidden bugs & rapid technical debt</td>
+                    <td>Prompt drift or over-reliance on autocomplete</td>
+                    <td>High mental fatigue & slower initial iteration</td>
+                </tr>
+                <tr>
+                    <td>Optimal Use Case</td>
+                    <td>Rapid MVPs, exploratory scripts, weekend hacks</td>
+                    <td>Enterprise applications, production systems, APIs</td>
+                    <td>Core algorithms, embedded/low-level systems, security kernels</td>
                 </tr>
             </tbody>
         </table>

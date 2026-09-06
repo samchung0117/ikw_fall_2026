@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Project vs. Team Project</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent-term: #2563eb;
+            --accent-team: #0d9488;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+
+        p.subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .highlight-term {
+            color: var(--accent-term);
+            font-weight: 600;
+        }
+
+        .highlight-team {
+            color: var(--accent-team);
+            font-weight: 600;
+        }
+
+        /* Comparison Table */
+        .table-container {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #475569;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .card-term { border-top: 4px solid var(--accent-term); }
+        .card-team { border-top: 4px solid var(--accent-team); }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            margin: 0;
+            color: var(--text-muted);
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 640px) {
+            th, td {
+                padding: 0.75rem 0.75rem;
+                font-size: 0.9rem;
+            }
+            h1 { font-size: 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Term Project <span style="color: var(--text-muted); font-weight: 300;">vs.</span> Team Project</h1>
+        <p class="subtitle">
+            While they sound almost identical, <span class="highlight-term">Term Project</span> defines <em>when and how long</em> a project runs, whereas <span class="highlight-team">Team Project</span> defines <em>who</em> works on it.
+        </p>
+    </header>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th class="highlight-term">Term Project</th>
+                    <th class="highlight-team">Team Project</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Primary Focus</strong></td>
+                    <td><strong>Timeframe & Scope</strong><br><small style="color:var(--text-muted)">Spans an academic term/semester</small></td>
+                    <td><strong>Collaboration & Roles</strong><br><small style="color:var(--text-muted)">Group execution & teamwork</small></td>
+                </tr>
+                <tr>
+                    <td><strong>Structure</strong></td>
+                    <td>Milestones spread across weeks (e.g., proposal, midterm check-in, final presentation)</td>
+                    <td>Division of labor, peer evaluations, and shared accountability</td>
+                </tr>
+                <tr>
+                    <td><strong>Participants</strong></td>
+                    <td>Can be <strong>individual OR group-based</strong></td>
+                    <td>Must involve <strong>two or more people</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Goal</strong></td>
+                    <td>Demonstrate comprehensive mastery of course material over time</td>
+                    <td>Build soft skills, manage group dynamics, and execute larger-scale tasks</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="grid">
+        <div class="card card-term">
+            <h2>Term Project Solo</h2>
+            <ul>
+                <li>Spans an entire semester</li>
+                <li>Completed independently by one person</li>
+                <li><em>Example:</em> Writing an individual 20-page research thesis due at the end of the term.</li>
+            </ul>
+        </div>
+        <div class="card card-team">
+            <h2>Short-Term Team Project</h2>
+            <ul>
+                <li>Focuses on immediate group collaboration</li>
+                <li>Completed in a short timeframe</li>
+                <li><em>Example:</em> A 2-day hackathon or a 1-week group workshop assignment.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
